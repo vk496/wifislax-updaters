@@ -35,8 +35,9 @@ if [ ! "$(ping google.com -c1 2>/dev/null)" ]; then
 echo ""
 echo "No tengo internet ... el script se cerrara."
 echo ""
+ping google.com
 sleep 1
-exit 0
+exit 1
 fi
 
 BUSQUEDA(){
